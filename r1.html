@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="30">
+    <meta  charset="utf-8">
     <title>
       Personal Details
     </title>
@@ -15,14 +16,15 @@
         this.lastname=last;
         this.age=age;
         this.eyecolor=eye;
+        this.lastname =last;
+        this.age      =age;
+        this.eyecolor =eye;
+        this.nationality="English";
       }
-      person.nationality ="english";
-      var myfather=new person("John","Doe",50,"blue");
-      var mymother=new person("sally","rally",48,"grey");
-      myfather.name= function(){
-        return this.firstname + " " +this.lastname;
-      }
-      document.getElementById("demo").innerHTML="My fathername is " +myfather.name() +myfather.nationality;
+      var myfather=new person("John","Deo",60,"blue");
+      var mymother=new person("Sally","Rally",48,"green");
+
+      document.getElementById("demo").innerHTML="My Father is " +myfather.nationality+ "My mother is " +mymother.nationality;
     </script>
   </body>
 </html>
