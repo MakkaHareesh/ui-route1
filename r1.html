@@ -16,12 +16,13 @@
         this.age=age;
         this.eyecolor=eye;
       }
+      person.nationality ="english";
       var myfather=new person("John","Doe",50,"blue");
       var mymother=new person("sally","rally",48,"grey");
       myfather.name= function(){
         return this.firstname + " " +this.lastname;
       }
-      document.getElementById("demo").innerHTML="My fathername is " +myfather.name();
+      document.getElementById("demo").innerHTML="My fathername is " +myfather.name() +myfather.nationality;
     </script>
   </body>
 </html>
