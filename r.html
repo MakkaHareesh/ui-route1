@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="5">
+    <title>Personal details</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      function person(first,last,age,eyecolor){
+        this.firstname=first;
+        this.lastname=last;
+        this.age=age;
+        this.eyecolor=eyecolor;
+        this.changedname=function(name){
+          this.lastname=name;
+        }
+      }
+      var myMother = new person("Sally","rally",48,"green");
+      myMother.changedname("sathya","shafi");
+      document.getElementById("demo").innerHTML="my mother last name is" +myMother.lastname;
+    </script>
+  </body>
+</html>
