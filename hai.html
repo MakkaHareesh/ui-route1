@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+        Personal Details
+    </title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      function person(first,last,age,eye){
+        this.firstname=first;
+        this.lastname=last;
+        this.age=age;
+        this.eyecolor=eye;
+      }
+      var MyFather=new person("Jhon","Deo",50,"blue");
+      var MyMother =new person("Sally","Rally",48,"green");
+      MyFather.name=function(){
+        return this.firstname + ""+this.lastname;
+      };
+      document.getElementById("demo").innerHTML="myfather is" +MyFather.name();
+    </script>
+  </body>
+</html>
