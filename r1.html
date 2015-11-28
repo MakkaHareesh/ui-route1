@@ -2,11 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="30">
-    <meta  charset="utf-8">
-    <title>
-      Personal Details
-    </title>
+    <title>Personal Details</title>
   </head>
   <body>
     <p id="demo"></p>
@@ -16,15 +12,12 @@
         this.lastname=last;
         this.age=age;
         this.eyecolor=eye;
-        this.lastname =last;
-        this.age      =age;
-        this.eyecolor =eye;
-        this.nationality="English";
+        this.name=function(){
+          return this.firstname +"" +this.lastname;
+        }
       }
-      var myfather=new person("John","Deo",60,"blue");
-      var mymother=new person("Sally","Rally",48,"green");
-
-      document.getElementById("demo").innerHTML="My Father is " +myfather.nationality+ "My mother is " +mymother.nationality;
+      var myfather=new person("Hareesh","makka",22,"blue");
+      document.getElementById("demo").innerHTML="My Father name is "+myfather.name();
     </script>
   </body>
 </html>
